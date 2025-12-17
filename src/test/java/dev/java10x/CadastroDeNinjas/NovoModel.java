@@ -1,11 +1,34 @@
 package dev.java10x.CadastroDeNinjas;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+//Ele transforma uma classe comum em uma entidade no BD
+@Entity
+@Table(name = "tb_cadastro")	
 public class NovoModel {
-	String nome;
-	String email;
-	int idade;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Vai ser gerado automaticamente números sequenciais
+	private Long id;
+	private String nome;
+	private String email;
+	private int idade;
 	
 	
+	public NovoModel() {
+		
+	}
+	
+	public NovoModel(String nome, String email, int idade) {
+		super();
+		this.nome = nome;
+		this.email = email;
+		this.idade = idade;
+	}
 	public String getNome() {
 		return nome;
 	}
