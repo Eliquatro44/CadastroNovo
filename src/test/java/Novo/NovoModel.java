@@ -1,10 +1,14 @@
-package dev.java10x.CadastroDeNinjas;
+package Novo;
 
+import Missoes.MissoesModel;
 import jakarta.persistence.Entity;
+
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+
 
 //Ele transforma uma classe comum em uma entidade no BD
 @Entity
@@ -14,9 +18,17 @@ public class NovoModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // Vai ser gerado automaticamente números sequenciais
 	private Long id;
+	
 	private String nome;
+	
 	private String email;
+	
 	private int idade;
+	
+	
+	//@ManyToOne um ninja ter uma unica missao
+	@ManyToOne
+	private MissoesModel missoes;
 	
 	
 	public NovoModel() {

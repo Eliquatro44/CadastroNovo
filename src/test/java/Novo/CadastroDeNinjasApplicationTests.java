@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeNinjas;
+package Novo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
