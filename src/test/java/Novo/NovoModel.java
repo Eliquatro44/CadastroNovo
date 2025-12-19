@@ -2,6 +2,7 @@ package Novo;
 
 
 import Missoes.MissoesModel;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.GeneratedValue;
@@ -29,6 +30,7 @@ public class NovoModel {
 	
 	private String nome;
 	
+	@Column(unique = true)
 	private String email;
 	
 	private int idade;
