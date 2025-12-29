@@ -35,6 +35,8 @@ public class NovoModel {
 	
 	private int idade;
 	
+	private String imgurl;
+	
 	
 	//@ManyToOne um ninja ter uma unica missao
 	@ManyToOne
