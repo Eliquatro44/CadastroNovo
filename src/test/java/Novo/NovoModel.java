@@ -1,4 +1,4 @@
-package Novo;
+/*package Novo;
 
 
 import Missoes.MissoesModel;
@@ -28,13 +28,16 @@ public class NovoModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // Vai ser gerado automaticamente números sequenciais
 	private Long id;
 	
+	@Column(name = "nome")
 	private String nome;
 	
 	@Column(unique = true)
 	private String email;
 	
+	@Column(name = "idade")
 	private int idade;
 	
+	@Column(name = "img_url")
 	private String imgurl;
 	
 	
@@ -46,3 +49,4 @@ public class NovoModel {
 	
 	
 	}
+	*/

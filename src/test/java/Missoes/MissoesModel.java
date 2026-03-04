@@ -1,4 +1,6 @@
+/*
 package Missoes;
+ 
 
 import java.util.List;
 
@@ -31,3 +33,4 @@ public class MissoesModel {
 	private List<NovoModel> ninjas;
 
 }
+*/
